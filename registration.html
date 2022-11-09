@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="registration.css">
 </head>
 <body>
-    
+    <h2>HTML Forms</h2>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" value="Email"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="Password" value="Password"><br><br>
+
+    <form action="/action_page.php">
+        <label for="Selected Courses">Selected Courses:</label><br>
+        <select name="Selected Courses" id="selected Courses">
+          <option value="Cooking Essentials">Cooking Essentials</option>
+          <option value="Chef Skills">Chef Skills</option>
+          <option value="Nutrition in Cooking">Nutrition in Cooking</option>
+          <option value="Plant-Based Cooking">Plant-Based Cooking</option>
+          <option value="Teen's Kitchen">Teen's Kitchen</option>
+        </select>
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit"><br>
+    </form>
+
 </body>
 </html>
