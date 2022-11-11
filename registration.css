@@ -1,7 +1,22 @@
 * {
-    background-color: pink;
+    background-color: beige;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
 }
 
 label {
     font-family: "Roboto", sans-serif;
 }
+
+.footer {
+    background-color: #FF4C4C;
+    grid-column: span 3;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+  }

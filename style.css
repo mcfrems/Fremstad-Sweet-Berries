@@ -2,18 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-
-html, body {
-  height: 100%;
-  width: 100%;
   font-family: "Roboto", sans-serif;
 }
 
 .grid-container {
   display: grid;
-  grid-template-rows: 200px 700px 1fr 1fr 78px;
+  grid-template-rows: 200px auto 1fr 1fr 78px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -23,6 +17,7 @@ html, body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-right: 40px;
 }
 
 .header img {
@@ -31,18 +26,23 @@ html, body {
   
 nav a {
   text-decoration: none;
+  margin: 0 20px;
   color: black;
 }  
 
-button {
+.get-started {
   background-color: #FF4C4C
 }  
   
 .slogan {
+  grid-column: span 3;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 0 0 125px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 150px;
+  margin-bottom: 100px;
 }
 
 .slogan-text {
@@ -50,9 +50,8 @@ button {
 }
 
 .slogan img {
-  width: 757px;
+  width: 600px;
   border-radius: 39px;
-  margin: 50px;
 }
 
 .main {
@@ -103,5 +102,5 @@ button {
 .cooking-card img{
   width: 61px;
   height: 70px;
-  margin: 0 0 0 15px;
+  margin-top: -60px;
 }
