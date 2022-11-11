@@ -1,16 +1,14 @@
 * {
-    background-color: beige;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
     font-family: "Roboto", sans-serif;
 }
 
 label {
     font-family: "Roboto", sans-serif;
 }
+
+.form (
+    display: flex;
+)
 
 .footer {
     background-color: #FF4C4C;
