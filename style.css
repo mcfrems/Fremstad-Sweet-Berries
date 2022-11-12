@@ -30,6 +30,35 @@ nav a {
   color: black;
 }  
 
+#menucheck {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 620px){
+  nav { 
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  #menucheck:checked + nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+
+  }
+}
+
 .get-started {
   background-color: #FF4C4C
 }  
